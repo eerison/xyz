@@ -1,0 +1,22 @@
+version: '3.8'
+services:
+  php:
+    image: 3lever/php:8.1.7-cli-postgresql-dev
+    ports:
+      - "${HTTP_PORT:-8003}:8003"
+    volumes:
+      - ./:/app
+    links:
+      - db
+
+  db:
+    image: postgres
+    restart: always
+    environment:
+      POSTGRES_USER: myprofile
+      POSTGRES_PASSWORD: 123456
+      POSTGRES_DB: myprofile
+    volumes:
+      - .docker/database/data:/var/lib/postgresql/data
+    ports:
+      - 54322:5432
