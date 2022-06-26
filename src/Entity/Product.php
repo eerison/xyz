@@ -25,10 +25,6 @@ use Symfony\Component\Serializer\Annotation\Groups;
     , properties: ['articles.price' => 'ASC', 'articles.pricePerUnit'=>'ASC']
     , arguments: ['orderParameterName' => 'order']
 )]
-#[ApiFilter(
-    DateFilter::class
-    , properties: ['articles' => DateFilterInterface::EXCLUDE_NULL]
-)]
 class Product
 {
     #[ORM\Id]

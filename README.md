@@ -1,3 +1,5 @@
+[![Continuous Integration](https://github.com/eerison/xyz/actions/workflows/ci.yml/badge.svg)](https://github.com/eerison/xyz/actions/workflows/ci.yml)
+
 # How start?
 
 just run the command bellow
