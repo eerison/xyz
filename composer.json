@@ -72,6 +72,13 @@
         ],
         "post-update-cmd": [
             "@auto-scripts"
+        ],
+        "setup": [
+            "composer install",
+            "php bin/console doctrine:database:create --if-not-exists",
+            "php bin/console doctrine:migrations:migrate --no-interaction",
+            "php bin/console hautelook:fixtures:load --no-interaction"
+
         ]
     },
     "conflict": {
@@ -84,6 +91,7 @@
         }
     },
     "require-dev": {
+        "hautelook/alice-bundle": "^2.10",
         "symfony/maker-bundle": "^1.43"
     }
 }
