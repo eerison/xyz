@@ -13,10 +13,10 @@ services:
     image: postgres
     restart: always
     environment:
-      POSTGRES_USER: myprofile
+      POSTGRES_USER: db-user
       POSTGRES_PASSWORD: 123456
-      POSTGRES_DB: myprofile
+      POSTGRES_DB: db-database
     volumes:
       - .docker/database/data:/var/lib/postgresql/data
     ports:
-      - 54322:5432
+      - 5434:5432
