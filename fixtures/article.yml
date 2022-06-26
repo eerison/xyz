@@ -1,0 +1,56 @@
+App\Entity\Article:
+  article{1..10}:
+    shortDescription: <name()>
+    price: <randomFloat(2, 1, 100)>
+    pricePerUnit: <randomFloat(2, 1, 2)>
+    unit: 'Liter'
+    image: <imageUrl(640, 480, 'beer', true)>
+
+  static_article_1:
+    shortDescription: '20 x 0,5L (Glas)'
+    price: 17.99
+    pricePerUnit: 1.80
+    unit: 'Liter'
+    image: 'https://image.flaschenpost.de/articles/small/1491.png'
+
+  static_article_2:
+    shortDescription: '20 x 0,5L (Glas)'
+    price: 17.99
+    pricePerUnit: 1.80
+    unit: 'Liter'
+    image: 'https://image.flaschenpost.de/articles/small/738.png'
+
+  static_article_3:
+    shortDescription: '24 x 0,33L (Glas)'
+    price: 17.99
+    pricePerUnit: 2.27
+    unit: 'Liter'
+    image: 'https://image.flaschenpost.de/articles/small/740.png'
+
+  lowest_price_article:
+    shortDescription: 'lowest article'
+    price: 0.5
+    pricePerUnit: 0.5
+    unit: 'Liter'
+    image: 'https://image.flaschenpost.de/articles/small/740.png'
+
+  highest_price_article:
+    shortDescription: 'highest article'
+    price: 1000.50
+    pricePerUnit: 1.50
+    unit: 'Liter'
+    image: 'https://image.flaschenpost.de/articles/small/740.png'
+
+  lowest_price_per_unit_article:
+    shortDescription: 'lowest price per unit article'
+    price: 250.1
+    pricePerUnit: 0.25
+    unit: 'Liter'
+    image: 'https://image.flaschenpost.de/articles/small/740.png'
+
+  highest_price_per_unit_article:
+    shortDescription: 'highest price per unit article'
+    price: 200.30
+    pricePerUnit: 200.30
+    unit: 'Liter'
+    image: 'https://image.flaschenpost.de/articles/small/740.png'

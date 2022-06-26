@@ -1,0 +1,9 @@
+App\Entity\Brand:
+  brand{1..10}:
+    name: <name()>
+
+  brand_1:
+    name: 'Krombacher'
+
+  brand_2:
+    name: 'Büble'

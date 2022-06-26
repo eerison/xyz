@@ -1,0 +1,42 @@
+App\Entity\Product:
+  static_product_1:
+    brand: '@brand_2'
+    name: 'Allgäuer Büble Bayrisch Hell'
+    articles: '[@static_article_1]'
+    descriptionText: <text()>
+
+  static_product_2:
+    brand: '@brand_1'
+    name: 'Krombacher Hell'
+    articles: '[@static_article_2, @static_article_3]'
+    descriptionText: <text()>
+
+  lowest_price_product:
+    brand: '@brand_1'
+    name: 'lowest_product'
+    articles: '[@lowest_price_article]'
+    descriptionText: <text()>
+
+  highest_price_product:
+    brand: '@brand_1'
+    name: 'highest_product'
+    articles: '[@highest_price_article]'
+    descriptionText: <text()>
+
+  lowest_price_per_unit_product:
+    brand: '@brand_1'
+    name: 'lowest_price_per_unit_product'
+    articles: '[@lowest_price_per_unit_article]'
+    descriptionText: <text()>
+
+  highest_price_per_unit_product:
+    brand: '@brand_1'
+    name: 'highest_price_per_unit_product'
+    articles: '[@highest_price_per_unit_article]'
+    descriptionText: <text()>
+
+  product{1..5}:
+    brand: '@brand*'
+    name: '<name()>'
+    descriptionText: <text()>
+    articles: '2x @article*'
